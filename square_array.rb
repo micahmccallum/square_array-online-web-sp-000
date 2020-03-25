@@ -1,7 +1,3 @@
 def square_array(array)
-  squaredArray = []
-  array.each do |item|
-    squaredArray.push(item**2)
-  end
-  squaredArray
+  array.collect do { |item| item*item  }    
 end
